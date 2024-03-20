@@ -44,24 +44,7 @@ class Landmark {
     );
   }
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['name'] = name;
-    data['description'] =description;
-    data['imageCover'] =imageCover;
-    data['images'] = images;
-    data['category'] = category;
-    data['location'] = {
-      'type': locationType,
-      'coordinates': coordinates,
-      'governorate': governorate,
-    };
-    data['visitsNumber'] = visitsNumber;
-    data['rating'] = rating;
-    data['ratingsQuantity'] = ratingsQuantity;
-    data['slug'] =slug;
-    return data;
-  }
+  
 }
 
   
