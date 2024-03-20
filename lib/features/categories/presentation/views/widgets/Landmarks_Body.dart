@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:graduation/features/categories/presentation/views/info_view.dart';
 import 'package:graduation/features/categories/presentation/views/widgets/appbar.dart';
 import 'package:graduation/features/categories/presentation/views/widgets/arrow.dart';
 import 'package:graduation/features/categories/presentation/views/widgets/customcard.dart';
@@ -14,9 +13,7 @@ class LandmarksBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar:          
-            CustomAppBar(),
-       
+        appBar: CustomAppBar(),       
         body: Column(
           children: [
             arrow(onTap: () => GoRouter.of(context).pop('/')),

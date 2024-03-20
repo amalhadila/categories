@@ -8,7 +8,7 @@ class arrow extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 19, top: 9, bottom: 11),
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * .05,
+        height: MediaQuery.of(context).size.height * .04,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,

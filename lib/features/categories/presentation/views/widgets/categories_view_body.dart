@@ -10,7 +10,7 @@ class CategoriesViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar:  CustomAppBar(),
+      appBar: CustomAppBar(),
         body: Column(
           children: [
             arrow(
@@ -22,6 +22,7 @@ class CategoriesViewBody extends StatelessWidget {
                 text: 'Archaeological areas'),
           ],
         ),
-        bottomNavigationBar: navgbar(),);
+        bottomNavigationBar: navgbar(),
+        );
   }
 }

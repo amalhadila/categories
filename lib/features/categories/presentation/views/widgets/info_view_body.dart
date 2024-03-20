@@ -12,7 +12,7 @@ class InfViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:  CustomAppBar(),
+      appBar: CustomAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
