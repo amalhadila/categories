@@ -9,6 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       backgroundColor: abarcolor,
       elevation: 0, // Removes the shadow
       title: Row(
@@ -23,7 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 15),
             child: SizedBox(
               width: 250,
-              height: 27,
+             height: 27,
               child: TextField(
                 decoration: const InputDecoration(
                   filled: true,
