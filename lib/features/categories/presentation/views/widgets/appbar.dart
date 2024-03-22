@@ -24,13 +24,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 15),
             child: SizedBox(
               width: 250,
-             height: 27,
+              height: 27,
               child: TextField(
                 decoration: const InputDecoration(
                   filled: true,
                   fillColor: Colors.white,
-                  prefixIcon: Icon(FontAwesomeIcons.magnifyingGlass,
-                  size: 20,),
+                  prefixIcon: Icon(
+                    FontAwesomeIcons.magnifyingGlass,
+                    size: 20,
+                  ),
                   suffixIcon: Icon(Icons.menu),
                   contentPadding: EdgeInsets.symmetric(horizontal: 8),
                   hintText: 'Search',

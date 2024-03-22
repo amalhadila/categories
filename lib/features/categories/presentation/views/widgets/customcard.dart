@@ -4,7 +4,7 @@ import 'package:graduation/core/utils/style.dart';
 const kCardColor = Color(0xffF2F2F2);
 
 class CustomCard extends StatelessWidget {
-  CustomCard({Key? key, required this.imglink, required this.text, this.onTap});
+  const CustomCard({Key? key, required this.imglink, required this.text, this.onTap});
 
   final String imglink;
   final String text;
@@ -17,7 +17,7 @@ class CustomCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
                 blurRadius: 4,
                 offset: Offset(0, 5),
@@ -47,14 +47,14 @@ class CustomCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(
                   text,
                   style: Textstyle.textStyle12,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
           ),

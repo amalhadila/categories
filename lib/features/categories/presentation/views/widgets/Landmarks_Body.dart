@@ -13,35 +13,35 @@ class LandmarksBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: CustomAppBar(),       
-        body: Column(
-          children: [
-            arrow(onTap: () => GoRouter.of(context).pop('/')),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 11, right: 17),
-                child: GridView.builder(
-                  clipBehavior: Clip.none,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio:
-                        (MediaQuery.of(context).size.width * .431) /
-                            (MediaQuery.of(context).size.height * .253),
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 22,
-                    mainAxisSpacing: 15,
-                  ),
-                  itemBuilder: (context, index) {
-                    return CustomCard(
-                      imglink: imagelink,
-                      text: text = 'the pyramids',
-                      onTap: () => GoRouter.of(context).push('/Information'),
-                    );
-                  },
+      appBar: CustomAppBar(),
+      body: Column(
+        children: [
+          arrow(onTap: () => GoRouter.of(context).pop('/')),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 11, right: 17),
+              child: GridView.builder(
+                clipBehavior: Clip.none,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  childAspectRatio: (MediaQuery.of(context).size.width * .431) /
+                      (MediaQuery.of(context).size.height * .253),
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 22,
+                  mainAxisSpacing: 15,
                 ),
+                itemBuilder: (context, index) {
+                  return CustomCard(
+                    imglink: imagelink,
+                    text: text = 'the pyramids',
+                    onTap: () => GoRouter.of(context).push('/Information'),
+                  );
+                },
               ),
             ),
-          ],
-        ),
-        bottomNavigationBar: navgbar(),);
+          ),
+        ],
+      ),
+      bottomNavigationBar: navgbar(),
+    );
   }
 }

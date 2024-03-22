@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:graduation/features/categories/presentation/views/widgets/categories_view_body.dart';
 import 'package:graduation/features/categories/presentation/views/widgets/customcard.dart';
 
 class categoriesgrid extends StatelessWidget {

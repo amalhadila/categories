@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduation/core/utils/style.dart';
 import 'package:graduation/features/categories/presentation/manger/more_info_cubit/more_info_cubit.dart';
 
+// ignore: must_be_immutable
 class Information extends StatelessWidget {
   Information({Key? key}) : super(key: key);
 

@@ -6,7 +6,6 @@ class CategoriesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: CategoriesViewBody());
+    return Scaffold(body: CategoriesViewBody());
   }
 }

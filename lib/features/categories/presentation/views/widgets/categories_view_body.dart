@@ -11,18 +11,18 @@ class CategoriesViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
-        body: Column(
-          children: [
-            arrow(
-              onTap: () {},
-            ),
-            categoriesgrid(
-                imagelink:
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1024px-Kheops-Pyramid.jpg',
-                text: 'Archaeological areas'),
-          ],
-        ),
-        bottomNavigationBar: navgbar(),
-        );
+      body: Column(
+        children: [
+          arrow(
+            onTap: () {},
+          ),
+          categoriesgrid(
+              imagelink:
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1024px-Kheops-Pyramid.jpg',
+              text: 'Archaeological areas'),
+        ],
+      ),
+      bottomNavigationBar: navgbar(),
+    );
   }
 }
