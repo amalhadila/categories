@@ -30,7 +30,7 @@ class CategoriesRepoImpl implements CategoriesRepo {
   Future<Either<Failure, List<LandmarkOnCatModel>>> fetchlandmarks() async {
     try {
       var data = await apiService.get(endpoint: 'categories/:categoryId/landmarks?sort=rating');
-            print(data['data']['landmarks']);
+          //  print(data['data']['landmarks']);
 
       List<LandmarkOnCatModel> landmarkdata = [];
       for (var item in data['data']['landmarks']) {

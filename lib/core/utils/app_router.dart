@@ -9,7 +9,7 @@ abstract class AppRouter {
       GoRoute(path: '/', builder: (context, state) => const CategoriesView()),
       GoRoute(
           path: '/LandmarksBody',
-          builder: (context, state) => const Landmarks_view()),
+          builder: (context, state) =>  Landmarks_view()),
       GoRoute(
           path: '/Information', builder: (context, state) => const Infoview()),
     ],

@@ -5,7 +5,7 @@ import 'package:graduation/features/categories/presentation/views/widgets/cat_gr
 import 'package:graduation/features/categories/presentation/views/widgets/navigationpar.dart';
 
 class CategoriesViewBody extends StatelessWidget {
-  const CategoriesViewBody({super.key});
+  const CategoriesViewBody({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,8 @@ class CategoriesViewBody extends StatelessWidget {
           arrow(
             onTap: () {},
           ),
-          categoriesgrid(
-              imagelink:
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1024px-Kheops-Pyramid.jpg',
-              text: 'Archaeological areas'),
+          CategoriesGrid(),           
+         
         ],
       ),
       bottomNavigationBar: navgbar(),
